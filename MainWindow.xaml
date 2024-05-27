@@ -1,0 +1,98 @@
+﻿<Window x:Class="billing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:billing"
+        mc:Ignorable="d"
+        Title="Billing" Height="550" Width="800">
+    <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="734"  >
+        <StackPanel Orientation="Vertical" Height="30" Width="258" Margin="0,-300,-250,0">
+            <TextBlock Text="Billing" FontWeight="DemiBold" HorizontalAlignment="Left" Padding="20,0,0,0" Width="136" FontSize="20"></TextBlock>
+        </StackPanel>
+        <StackPanel Height="235" Width="700" Orientation="Horizontal">
+           
+                <StackPanel Orientation="Vertical" Height="235" Width="100">
+                    <Label Content="S.No" Background="Black" Foreground="White" HorizontalContentAlignment="Center"></Label>
+                    <ComboBox x:Name="txtsno1" BorderThickness="0.5" Height="40"  SelectionChanged="txtsno1_SelectionChanged">
+                    <ComboBoxItem Content="701"></ComboBoxItem>
+                    <ComboBoxItem Content="702"></ComboBoxItem>
+                    <ComboBoxItem Content="703"></ComboBoxItem>
+                    <ComboBoxItem Content="704"></ComboBoxItem>
+                    <ComboBoxItem Content="705"></ComboBoxItem>
+
+
+                    </ComboBox>
+
+
+                    <ComboBox x:Name="txtsno2" BorderThickness="0.5" Height="40" SelectionChanged="txtsno2_SelectionChanged">
+                    <ComboBoxItem Content="702"></ComboBoxItem>
+                    <ComboBoxItem Content="701"></ComboBoxItem>
+                    <ComboBoxItem Content="703"></ComboBoxItem>
+                    <ComboBoxItem Content="704"></ComboBoxItem>
+                    <ComboBoxItem Content="705"></ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox x:Name="txtsno3" BorderThickness="0.5" Height="40" SelectionChanged="txtsno3_SelectionChanged"  >
+                    <ComboBoxItem Content="703"></ComboBoxItem>
+                    <ComboBoxItem Content="704"></ComboBoxItem>
+                    <ComboBoxItem Content="705"></ComboBoxItem>
+                    <ComboBoxItem Content="701"></ComboBoxItem>
+                    <ComboBoxItem Content="702"></ComboBoxItem>
+
+                    </ComboBox>
+                    <ComboBox x:Name="txtsno4" BorderThickness="0.5" Height="40" SelectionChanged="txtsno4_SelectionChanged">
+                    <ComboBoxItem Content="704"></ComboBoxItem>
+                    <ComboBoxItem Content="705"></ComboBoxItem>
+                    <ComboBoxItem Content="701"></ComboBoxItem>
+                    <ComboBoxItem Content="702"></ComboBoxItem>
+                    <ComboBoxItem Content="703"></ComboBoxItem>
+
+                    </ComboBox>
+                    <ComboBox x:Name="txtsno5" BorderThickness="0.5" Height="40" SelectionChanged="txtsno5_SelectionChanged">
+                    <ComboBoxItem Content="705"></ComboBoxItem>
+                    <ComboBoxItem Content="701"></ComboBoxItem>
+                    <ComboBoxItem Content="702"></ComboBoxItem>
+                    <ComboBoxItem Content="703"></ComboBoxItem>
+                    <ComboBoxItem Content="704"></ComboBoxItem>
+
+                    </ComboBox>
+                </StackPanel>
+            <StackPanel Orientation="Vertical" Height="235" Width="200">
+                <Label Content="productName" Background="Black" Foreground="White" HorizontalContentAlignment="Center"></Label>
+                <TextBox x:Name="txtpn1" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+                <TextBox x:Name="txtpn2" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+                <TextBox x:Name="txtpn3" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+                <TextBox x:Name="txtpn4" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+                <TextBox x:Name="txtpn5" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Height="235" Width="200">
+                <Label Content="Quantity" Background="Black" Foreground="White" HorizontalContentAlignment="Center"></Label>
+                <TextBox x:Name="txtq1" BorderThickness="0.5" Height="40" FontSize="20" TextChanged="txtq1_TextChanged" ></TextBox>
+                <TextBox x:Name="txtq2" BorderThickness="0.5" Height="40" FontSize="20" TextChanged="txtq2_TextChanged"></TextBox>
+                <TextBox x:Name="txtq3" BorderThickness="0.5" Height="40" FontSize="20" TextChanged="txtq3_TextChanged"></TextBox>
+                <TextBox x:Name="txtq4" BorderThickness="0.5" Height="40" FontSize="20" TextChanged="txtq4_TextChanged"></TextBox>
+                <TextBox x:Name="txtq5" BorderThickness="0.5" Height="40" FontSize="20" TextChanged="txtq5_TextChanged"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Height="235" Width="200">
+                <Label Content="Price" Background="Black" Foreground="White" HorizontalContentAlignment="Center"></Label>
+                <TextBox x:Name="txtpr1" BorderThickness="0.5" Height="40" FontSize="20" ></TextBox>
+                <TextBox x:Name="txtpr2" BorderThickness="0.5" Height="40" FontSize="20" ></TextBox>
+                <TextBox x:Name="txtpr3" BorderThickness="0.5" Height="40" FontSize="20" ></TextBox>
+                <TextBox x:Name="txtpr4" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+                <TextBox x:Name="txtpr5" BorderThickness="0.5" Height="40" FontSize="20"></TextBox>
+
+            </StackPanel>
+
+
+
+
+
+          
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Height="50" Width="184" Margin="-570,300,0,0" x:Name="btntotal" Content="Total"  Click="btntotal_Click"></Button>
+            <TextBox x:Name="txttotal" Height="50" Width="184" Margin="-200,300,0,0" Foreground="Black" FontWeight="ExtraBlack" IsReadOnly="True" FontSize="20" HorizontalContentAlignment="Center" Padding="0,0,0,20"></TextBox>
+        </StackPanel>
+
+    </DockPanel>
+</Window>
